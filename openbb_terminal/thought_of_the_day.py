@@ -18,7 +18,7 @@ class ThoughtOfTheDay:
     def __init__(self, urls: Dict[str, str] = None):
         """Constructor"""
 
-        self.metadata = {}  # type: Dict
+        self.metadata: Dict = {}
 
         if urls is None:
             self.urls = {

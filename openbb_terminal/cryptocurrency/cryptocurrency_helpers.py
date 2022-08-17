@@ -439,7 +439,7 @@ def load_deprecated(
             )
             return None, None, None, None, None, None
 
-    current_coin = ""  # type: Optional[Any]
+    current_coin: Optional[Any] = ""
 
     coins_map_df = prepare_all_coins_df().set_index("Symbol").dropna(thresh=2)
 
